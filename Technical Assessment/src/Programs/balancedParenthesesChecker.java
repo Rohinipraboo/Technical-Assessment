@@ -29,6 +29,10 @@ public class balancedParenthesesChecker {
                else if(Character.isDigit(s.charAt(i))) {
                 	continue;
                 }
+		       else if(Character.isLetter(s.charAt(i)))
+		       {
+               	continue;
+               }
             
            	 
                else if((!Character.isLetterOrDigit(s.charAt(i)))&&( s.charAt(i) != '(')&& (s.charAt(i) != '{')&&( s.charAt(i) != '[')&&( s.charAt(i) != ')')&& (s.charAt(i) != '}')&&( s.charAt(i) != ']')) 
